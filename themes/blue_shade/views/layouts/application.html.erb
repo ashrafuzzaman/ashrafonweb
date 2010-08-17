@@ -1,0 +1,82 @@
+<% js_caching = RefinerySetting.find_or_set(:use_resource_caching, Rails.root.join('public', 'javascripts', 'cache').writable?) -%>
+<% content_for :head do %>
+  <%= jquery_include_tags(:caching => js_caching) %>
+
+  <link href="/theme/stylesheets/corner.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="/theme/javascripts/jquery.accordion.js"></script>
+  <script type="text/javascript" src="/theme/javascripts/pngcorners.js"></script>
+  <script type="text/javascript" src="/theme/javascripts/default.js"></script>
+  <script type="text/javascript" src="/theme/javascripts/speech.js"></script>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-4577165-2");
+      pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      initialize();
+    });
+    window.onload = sayHello;
+  </script>
+<% end %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <%= render :partial => "/shared/head", :locals => {:theme => true} %>
+  <body>
+    <%= render :partial => "/shared/site_bar" %>
+    <div id="wrapper" class="white_corner">
+      <div class="content">
+        <div id="header">
+          <div id="profile_picture" class="profile_picture"></div>
+          <div class="title">
+            <h1><%= RefinerySetting.find_or_set(:welcome_note, "Welcome to my website") %></h1>
+            <h2> A.K.M. Ashrafuzzaman</h2>
+            <h3 speech="Yup! It's a bit long.<br/>That's why you can use the other one :)">ashrafuzzaman.g2(AT)gmail(DOT)com</h3>
+            <h3 speech="A shorter email :)">zmn.ashraf(AT)gmail(DOT)com</h3>
+            <h3><i>Phone number</i> <%= RefinerySetting.find_or_set(:phone, "+46720413223") %></h3>
+            <h3><i>Technical blog </i><a href="http://jitu-blog.blogspot.com/" target="_blank">jitu-blog.blogspot.com</a>,
+              <a href="http://distash.blogspot.com/" target="_blank" speech="It is about Distributed System">distash.blogspot.com</a></h3>
+            <br/>
+          </div>
+        </div>
+        <div id="navigation">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="navigation_left"></td>
+              <td class="navigation_bg">
+                <%= render :partial => 'shared/menu' %>
+              </td>
+              <td class="navigation_right"></td>
+            </tr>
+          </table>
+        </div>
+        <div id="content_wrapper">
+          <div id="content">
+            <%= yield %>
+          </div>
+        </div>
+        <div id="footer">
+          <hr size="1"/>
+          <h4 speech="You are most welcome to provide any feedback">Developed and maintained by A.K.M. Ashrafuzzaman</h4>
+        </div>
+      </div>
+    </div>
+    <div class="bubble_template bubble green_corner round_me" style="display: none;">
+      <div class="arrow"></div>
+      <div class="speech_content">
+        Welcome
+      </div>
+    </div>
+
+  </body>
+</html>

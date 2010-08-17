@@ -1,0 +1,197 @@
+* { padding: 0; margin: 0; }
+
+body
+{
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    font-family: verdana;
+    background-color: #9DC3EF;
+    background-repeat: repeat-x;
+}
+a { color: #6183FF; }
+.sky_corner a { color: #426894; }
+.loading { margin: 0 auto; width: 208px; height: 13px; background: url(/theme/images/loadingAnimation.gif) }
+
+#resume { font-size: 1em; color: #666; }
+#resume h2 { font-size: 1.2em; font-weight: bold; color: #666; padding-left: 25px; }
+
+#wrapper, .center { margin: 0 auto; width: 920px; }
+#wrapper { margin-top: 50px; text-align: left; }
+
+#content_wrapper { color: #435466; padding: 20px; min-height: 300px; height: auto !important; height: 300px; font-size: 1em; }
+#content_wrapper h3 { color: #3873B5; font-size: 1.0em; }
+#content_wrapper h4 { color: #3873B5; font-size: 0.7em; }
+#footer { clear:both; text-align: center; padding: 5px 1px 1px 1px; margin-top: 10px; }
+#footer h4 { color: #666; font-size: 0.7em; width: 850px; }
+
+#header { overflow: auto; padding: 10px 0px 0px 10px; }
+#header, #content_wrapper { width: 850px; }
+#header .profile_picture { float: right; width: 100px; height: 115px; background: url(/theme/images/me.jpg); margin-top: 30px;}
+#header .title { float: left; margin-left: 10px; }
+#header .title h1 { font-size: 1.6em !important; font-size: 1.4em; color: #444; text-shadow: 1px 1px 3px #444; }
+#header .title h2 { 
+    font-size: 1.0em !important;
+    font-size: 0.9em;
+    color: #666;
+    text-shadow: #999 0px 2px 2px;
+}
+#header .title h3 { font-size: 0.9em !important; font-size: 0.8em; color: #88A; }
+#header .title h3 i { color: #AAA; font: bold; }
+
+/*Nevigation background*/
+#navigation, .navigation_left, .navigation_bg, .navigation_right { height: 30px; }
+.navigation_left
+{
+    width: 25px;
+    background-repeat: no-repeat;
+    background-image: url(/theme/images/menu/nav_left.png); /** sprite-ref: structure */
+}
+.navigation_right  
+{
+    width: 24px;
+    background-repeat: no-repeat;
+    background-image: url(/theme/images/menu/nav_right.png); /** sprite-ref: structure */
+}
+.navigation_bg  
+{
+    background-image: url(/theme/images/menu/nav_bg.png); /** sprite-ref: structure_vertical */
+    padding-left: 20px;
+}
+#navigation div { float: left; margin: 3px 0 3px 0; padding: 0px 10px 0px 10px; border-right-color: #FFFFFF; border-left-color: #919191; border-style: solid; border-width: thin; border-top-style: none; border-bottom-style: none; }
+#navigation .first { border-left-style: none; }
+#navigation .last { border-right-style: none; }
+
+#navigation .seperator { margin: 2px 10px 0px 10px; border-top-color: #919191; border-right-color: #FFFFFF; border-left-color: #919191; border-bottom-color: #919191; float: left; height: 20px; width: thin; border-style: solid; border-width: thin; }
+.ie #navigation .seperator  
+{
+    border:none; 
+    margin: 0px 10px 0px 10px; 
+    float: left; 
+    background-repeat: no-repeat;
+    background-image: url(/theme/images/menu/menu_bg_seperator.gif); /** sprite-ref: structure_ie_vertical */
+    width: 4px; 
+    height: 100%;
+}
+
+/*Nevigation menu text*/
+#navigation a { 
+    float: left;
+    font-size: 1.2em;
+    color:#505050;
+    text-shadow: -1px -1px 0px #202020, 1px 1px 0px #fff;
+    text-decoration:none; /*css effect to make it transparent*/
+}
+#navigation a:hover {
+    margin-top: -2px;
+    color:#666;
+    text-shadow: -1px 0px 0px #444, 1px 1px 0px #fff;
+}
+
+#navigation .selected a {
+    margin-top: 0px;
+    color:#2E8EFA;
+    text-shadow: -1px -1px 0px #444, 1px 1px 0px #fff;
+}
+
+/* ----- Icons ----- */
+.icon { height: 50px; padding-top: 5px; }
+.icon a{ padding-left: 5px; }
+.icon div{ float: left; }
+.blogger_icon, .facebook_icon, .twitter, .linkedin_icon, .feed { background: url(/theme/images/icons.jpg) no-repeat; height: 60px; width: 40px;}
+.blogger_icon { background-position: 0px 0px;}
+.facebook_icon { background-position: -40px 0px; }
+.twitter { background-position: -80px 0px; }
+.linkedin_icon { background-position: -120px 0px; }
+.feed { background-position: -160px 0px; }
+
+/* --- Glass Effect Title --- */
+.styled_title,.styled_title_bg,.styled_title_right { height: 24px; }
+.styled_title       { background: url(/theme/images/title.gif) no-repeat bottom left; }
+.styled_title_right { background: url(/theme/images/title.gif) no-repeat bottom right; }
+.styled_title_bg    { background: url(/theme/images/title.gif) top repeat-x; margin: 0px 8px 0px 8px; }
+
+/* --- Picture ---*/
+#picture_menu  .content { background-color: #DADADA; }
+#picture_menu  .selected { background-color: #EAEAEA; color: #000; }
+
+#pictures { margin: 0 auto; width: 770px; }
+#pictures .contriner { border: 1px; }
+#pictures .contriner .styled_title { cursor: pointer; }
+#pictures .contriner .styled_title_bg { cursor: pointer; color: #3873B5; font-weight: bold; }
+
+/* --- Speech Buble --- */
+.bubble { position: absolute; margin-right: 36px; }
+.arrow  { float: right; margin: -10px -55px 0px 0px; background: url(/theme/images/arrow.png) no-repeat; width: 50px; height: 30px;}
+.ie6 .arrow  { background: url(/theme/images/arrow.gif) no-repeat;}
+
+body /* Added at botttom to append the bg image at bottom of the sprit*/
+{
+    background-image: url(/theme/images/bg.png); /** sprite-ref: structure_vertical sprite-alignment: bottom */
+}
+
+.ie6 body /* Added at botttom to append the bg image at bottom of the sprit*/
+{
+    background-image: url(/theme/images/bg.gif); /** sprite-ref: structure_ie_vertical sprite-alignment: bottom */
+}
+
+
+
+/* ------------------------ */
+/* ------ IE Hack CSS ----- */
+/* ------------------------ */
+﻿.ie6 .navigation_left
+{
+    background-image: url(/theme/images/menu/nav_left.gif); /** sprite-ref: structure_ie */
+}
+.ie6 .navigation_right
+{
+    background-image: url(/theme/images/menu/nav_right.gif); /** sprite-ref: structure_ie */
+}
+.ie6 .navigation_bg
+{
+    background-image: url(/theme/images/menu/nav_bg.gif); /** sprite-ref: structure_ie_vertical; sprite-alignment: repeat */
+}
+
+/*Nevigation menu text*/
+.ie #navigation a { margin-top: 6px; height: 18px; }
+.ie #navigation a:hover { margin-top: 7px; }
+.ie6 #navigation .home a
+{
+    background-image: url(/theme/images/menu/home_menu.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .home .selected, .ie6 #navigation .home a:hover
+{
+    background-image: url(/theme/images/menu/home_menu_selected.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .about_me a
+{
+    background-image: url(/theme/images/menu/about_menu.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .about_me .selected, .ie6 #navigation .about_me a:hover
+{
+    background-image: url(/theme/images/menu/about_menu_selected.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .resume a
+{
+    background-image: url(/theme/images/menu/resume_menu.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .resume .selected, .ie6 #navigation .resume a:hover
+{
+    background-image: url(/theme/images/menu/resume_menu_selected.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .pictures a
+{
+    background-image: url(/theme/images/menu/pictures_menu.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .pictures .selected, .ie6 #navigation .pictures a:hover
+{
+    background-image: url(/theme/images/menu/pictures_menu_selected.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .contacts a, .ie6 #navigation .contacts a:hover
+{
+    background-image: url(/theme/images/menu/contacts_menu.gif);/** sprite-ref: structure_ie */
+}
+.ie6 #navigation .contacts .selected, .ie6 #navigation .contacts a:hover
+{
+    background-image: url(/theme/images/menu/contacts_menu_selected.gif);/** sprite-ref: structure_ie */
+}

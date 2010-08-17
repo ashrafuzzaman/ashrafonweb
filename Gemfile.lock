@@ -1,0 +1,87 @@
+--- 
+dependencies: 
+  rails: 
+    group: 
+    - :default
+    version: = 2.3.8
+  authlogic: 
+    group: 
+    - :default
+    version: = 2.1.5
+    require: 
+    - authlogic
+  sqlite3-ruby: 
+    group: 
+    - :default
+    version: ">= 0"
+    require: 
+    - sqlite3
+  refinerycms: 
+    group: 
+    - :default
+    version: = 0.9.7.12
+  truncate_html: 
+    group: 
+    - :default
+    version: = 0.3.2
+    require: 
+    - truncate_html
+  acts_as_indexed: 
+    group: 
+    - :default
+    version: = 0.6.3
+    require: 
+    - acts_as_indexed
+  friendly_id: 
+    group: 
+    - :default
+    version: = 3.0.6
+    require: 
+    - friendly_id
+  will_paginate: 
+    group: 
+    - :default
+    version: = 2.3.14
+    require: 
+    - will_paginate
+  rmagick: 
+    group: 
+    - :default
+    version: ~> 2.12.0
+specs: 
+- rake: 
+    version: 0.8.7
+- activesupport: 
+    version: 2.3.8
+- rack: 
+    version: 1.1.0
+- actionpack: 
+    version: 2.3.8
+- actionmailer: 
+    version: 2.3.8
+- activerecord: 
+    version: 2.3.8
+- activeresource: 
+    version: 2.3.8
+- acts_as_indexed: 
+    version: 0.6.3
+- authlogic: 
+    version: 2.1.5
+- friendly_id: 
+    version: 3.0.6
+- rails: 
+    version: 2.3.8
+- refinerycms: 
+    version: 0.9.7.12
+- rmagick: 
+    version: 2.12.2
+- sqlite3-ruby: 
+    version: 1.3.1
+- truncate_html: 
+    version: 0.3.2
+- will_paginate: 
+    version: 2.3.14
+hash: 04c1b3dc4928908926ba35c800b0472727a26462
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org

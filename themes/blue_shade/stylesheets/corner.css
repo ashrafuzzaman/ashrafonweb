@@ -1,0 +1,116 @@
+/* --- seperators --- */
+.white_corner hr { margin: 10px 0px 3px 0px; border-top-color: #888888; border-right-color: #888888; border-left-color: #888888; border-bottom-color: #EEEEEE; border-style: solid; border-width: thin; }
+.sky_corner hr { margin: 10px 0px 3px 0px; border-top-color: #426894; border-right-color: #426894; border-left-color: #426894; border-bottom-color: #E1F6FF; border-style: solid; border-width: thin; }
+
+.rounded_corner .content { height: 100%; }
+.rounded_corner .top , .rounded_corner .top_left, .rounded_corner .top_right { height: 16px; }
+.rounded_corner .bottom , .rounded_corner .bottom_left, .rounded_corner .bottom_right { height: 14px; }
+.rounded_corner .top_left, .rounded_corner .bottom_left , .rounded_corner .left { width: 15px; }
+.rounded_corner .top_right, .rounded_corner .bottom_right, .rounded_corner .right { width: 15px; }
+
+/** sprite: structure; sprite-image: url('/theme/images/structure.png'); sprite-layout: horizontal */
+/** sprite: structure_vertical; sprite-image: url('/theme/images/structure_vertical.png'); sprite-layout: vertical */
+/** sprite: structure_horizontal; sprite-image: url('/theme/images/structure_horizontal.png'); sprite-layout: horizontal */
+.white_corner .content { background-color: #FCFCFC; }
+.white_corner .top_left
+{
+    background-image: url(/theme/images/white/top_left.png); /** sprite-ref: structure */
+}
+.white_corner .top_right
+{
+    background-image: url(/theme/images/white/top_right.png); /** sprite-ref: structure */
+}
+.white_corner .bottom_left
+{
+    background-image: url(/theme/images/white/bottom_left.png); /** sprite-ref: structure */
+}
+.white_corner .bottom_right
+{
+    background-image: url(/theme/images/white/bottom_right.png); /** sprite-ref: structure */
+}
+.white_corner .top
+{
+    background-image: url(/theme/images/white/top.png); /** sprite-ref: structure_vertical */
+}
+.white_corner .bottom
+{
+    background-image: url(/theme/images/white/bottom.png); /** sprite-ref: structure_vertical */
+}
+.white_corner .left
+{
+    background-image: url(/theme/images/white/left.png); /** sprite-ref: structure_horizontal */
+}
+.white_corner .right
+{
+    background-image: url(/theme/images/white/right.png); /** sprite-ref: structure_horizontal */
+}
+
+/* sky style */
+.sky_corner .content { background-color: #b7ddff; padding: 5px; }
+.sky_corner .top_left
+{
+    background-image: url(/theme/images/sky/top_left.png); /** sprite-ref: structure */
+}
+.sky_corner .top_right
+{
+    background-image: url(/theme/images/sky/top_right.png); /** sprite-ref: structure */
+}
+.sky_corner .bottom_left
+{
+    background-image: url(/theme/images/sky/bottom_left.png); /** sprite-ref: structure */
+}
+.sky_corner .bottom_right
+{
+    background-image: url(/theme/images/sky/bottom_right.png); /** sprite-ref: structure */
+}
+.sky_corner .top
+{
+    background-image: url(/theme/images/sky/top.png); /** sprite-ref: structure_vertical */
+}
+.sky_corner .bottom
+{
+    background-image: url(/theme/images/sky/bottom.png); /** sprite-ref: structure_vertical */
+}
+.sky_corner .left
+{
+    background-image: url(/theme/images/sky/left.png); /** sprite-ref: structure_horizontal */
+}
+.sky_corner .right
+{
+    background-image: url(/theme/images/sky/right.png); /** sprite-ref: structure_horizontal */
+}
+
+/* green style */
+.green_corner .content { background-color: #ccffc5; padding: 5px; font-weight: bold; color: #4A7D43; }
+.green_corner .top_left
+{
+    background-image: url(/theme/images/green/top_left.png); /** sprite-ref: structure */
+}
+.green_corner .top_right
+{
+    background-image: url(/theme/images/green/top_right.png); /** sprite-ref: structure */
+}
+.green_corner .bottom_left
+{
+    background-image: url(/theme/images/green/bottom_left.png); /** sprite-ref: structure */
+}
+.green_corner .bottom_right
+{
+    background-image: url(/theme/images/green/bottom_right.png); /** sprite-ref: structure */
+}
+.green_corner .top
+{
+    background-image: url(/theme/images/green/top.png); /** sprite-ref: structure_vertical */
+}
+.green_corner .bottom
+{
+    background-image: url(/theme/images/green/bottom.png); /** sprite-ref: structure_vertical */
+}
+.green_corner .left
+{
+    background-image: url(/theme/images/green/left.png); /** sprite-ref: structure_horizontal */
+}
+.green_corner .right
+{
+    background-image: url(/theme/images/green/right.png); /** sprite-ref: structure_horizontal */
+}
