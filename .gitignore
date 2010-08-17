@@ -1,6 +1,5 @@
 # Rails
 .bundle
-db/*.sqlite3
 *.log
 tmp/**/*
 
@@ -18,6 +17,9 @@ public/themes/*
 # Public Cache
 public/javascripts/cache
 public/stylesheets/cache
+
+#production database
+db/production.sqlite3
 
 # Acts as Indexed
 index/**/*

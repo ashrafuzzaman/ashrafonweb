@@ -18,7 +18,7 @@ a { color: #6183FF; }
 #wrapper, .center { margin: 0 auto; width: 920px; }
 #wrapper { margin-top: 50px; text-align: left; }
 
-#content_wrapper { color: #435466; padding: 20px; min-height: 300px; height: auto !important; height: 300px; font-size: 1em; }
+#content_wrapper { color: #435466; padding: 20px; font-size: 1em; }
 #content_wrapper h3 { color: #3873B5; font-size: 1.0em; }
 #content_wrapper h4 { color: #3873B5; font-size: 0.7em; }
 #footer { clear:both; text-align: center; padding: 5px 1px 1px 1px; margin-top: 10px; }

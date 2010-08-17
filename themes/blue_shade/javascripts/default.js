@@ -20,11 +20,22 @@ function initialize() {
     roundedCorners();
     activateSpeech($("body"));
     loadRecentBlogFeed();
+    loadPicturesAccordion();
 }
 
 function roundedCorners() {
     $(".round_me").createRoundedCorner();
     $(".round_me").removeClass("round_me");
+}
+
+function loadPicturesAccordion() {
+    if(!$("#pictures")) return;
+    $("#pictures").accordion({
+        alwaysOpen: false,
+        autoheight: true,
+        header: 'div.styled_title',
+        clearStyle: true
+    });
 }
 
 function loadRecentBlogFeed() {
