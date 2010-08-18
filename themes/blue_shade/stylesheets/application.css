@@ -195,3 +195,6 @@ body /* Added at botttom to append the bg image at bottom of the sprit*/
 {
     background-image: url(/theme/images/menu/contacts_menu_selected.gif);/** sprite-ref: structure_ie */
 }
+
+#content ul { margin-left: 40px; }
+#content h3 { margin: 15px 0 5px 0; }
