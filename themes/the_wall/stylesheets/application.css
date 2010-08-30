@@ -401,6 +401,7 @@ h3 {
     height: 42px;
     width: 120px;
     outline: none;
+    text-shadow: 0px 1px 1px #000;
 }
 
 .stripNav li a { background: none; }
@@ -415,7 +416,7 @@ h3 {
     background: url(/theme/images/templatemo_menu_hover.png) bottom center no-repeat;
 }
 
-.stripNav li a.current {
+.stripNav li.selected a {
     color: #ffffff;
     background: url(/theme/images/templatemo_menu_hover.png) bottom center no-repeat;
 }
@@ -477,10 +478,10 @@ h3 {
 }
 
 #recent_blog h3, #recent_dist_blog h3{
-    color: #AEA18D;
+    color: #C1B39F;
     background: #3D2B12;
     padding-left: 10px;
-    text-shadow: 0px 1px 1px #312410;
+    text-shadow: 0px 1px 1px #000;
 }
 
 #recent_blog a, #recent_dist_blog a{
