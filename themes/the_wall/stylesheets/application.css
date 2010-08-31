@@ -322,9 +322,9 @@ h3 {
 }
 
 .slider-wrap { /* This div isn't entirely necessary but good for getting the side arrows vertically centered */
-               margin: 0;
-               position: relative;
-               width: 700px;
+    margin: 0;
+    position: relative;
+    width: 700px;
 }
 
 /* These 2 lines specify style applied while slider is loading */
@@ -332,51 +332,51 @@ h3 {
 .csw .loading { margin: 200px 0 0 0; text-align: center; width: 800px; height: 500px;}
 
 .stripViewer { /* This is the viewing window */
-               position: relative;
-               overflow: hidden;
-               margin: auto;
-               width: 800px; /* Also specified in  .stripViewer .panelContainer .panel  below */
-               height: 460px;
-               clear: both;
+   position: relative;
+   overflow: hidden;
+   margin: auto;
+   width: 800px; /* Also specified in  .stripViewer .panelContainer .panel  below */
+   height: 460px;
+   clear: both;
 }
 
 .stripViewer .panelContainer { /* This is the big long container used to house your end-to-end divs. Width is calculated and specified by the JS  */
-                               position: relative;
-                               left: 0; top: 0;
-                               width: 100%;
-                               list-style-type: none;
-                               /* -moz-user-select: none; // This breaks CSS validation but stops accidental (and intentional - beware) panel highlighting in Firefox. Some people might find this useful, crazy fools. */
+   position: relative;
+   left: 0; top: 0;
+   width: 100%;
+   list-style-type: none;
+   /* -moz-user-select: none; // This breaks CSS validation but stops accidental (and intentional - beware) panel highlighting in Firefox. Some people might find this useful, crazy fools. */
 }
 
 .stripViewer .panelContainer .panel { /* Each panel is arranged end-to-end */
-                                      float:left;
-                                      height: 100%;
-                                      position: relative;
-                                      width: 800px; /* Also specified in  .stripViewer  above */
+  float:left;
+  height: 100%;
+  position: relative;
+  width: 800px; /* Also specified in  .stripViewer  above */
 }
 
 .stripViewer .panelContainer .panel .wrapper { /* Wrapper to give some padding in the panels, without messing with existing panel width */
-                                               overflow: auto;
-                                               margin: 10px 40px 20px 40px;
-                                               height: 425px;
+   overflow: auto;
+   margin: 10px 40px 20px 40px;
+   height: 425px;
 }
 
 
 .stripNav { /* This is the div to hold your nav (the UL generated at run time) */
-            float: left;
-            display: block;
-            width: 762px;
-            height: 53px;
-            margin: 20px 19px;
+    float: left;
+    display: block;
+    width: 762px;
+    height: 53px;
+    margin: 20px 19px;
 }
 
 .stripNav ul { /* The auto-generated set of links */
-               margin: 0;
-               padding: 0;
-               height: 53px;
-               width: 762px;
-               list-style: none;
-               background: url(/theme/images/templatemo_menu.png) no-repeat;
+   margin: 0;
+   padding: 0;
+   height: 53px;
+   width: 762px;
+   list-style: none;
+   background: url(/theme/images/templatemo_menu.png) no-repeat;
 }
 
 .stripNav ul li {
@@ -422,9 +422,9 @@ h3 {
 }
 
 .stripNavL, .stripNavR { /* The left and right arrows */
-                         position: absolute;
-                         top: 230px;
-                         text-indent: -9000em;
+    position: absolute;
+    top: 230px;
+    text-indent: -9000em;
 }
 
 .stripNavL a, .stripNavR a {
