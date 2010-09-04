@@ -482,15 +482,19 @@ h3 {
 }
 
 #templatemo_content h2, #templatemo_content h3 {
-    background: #5B4D3A;
     color: #FFF;
-    font-size: 18px;
     padding: 3px 0px 3px 5px;
     margin: 10px 0px 3px 0px;
 }
 
+#templatemo_content h2 {
+    background: #5B4D3A;
+    font-size: 18px;
+}
+
 #templatemo_content h3 {
     font-size: 16px;
+    border: #AEA18D solid thin;
 }
 
 #templatemo_content h4 {
