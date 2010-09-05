@@ -462,25 +462,6 @@ h3 {
 .linkedin_icon { background-position: -120px 0px; }
 .feed { background-position: -160px 0px; }
 
-#recent_blog, #recent_dist_blog {
-    background: #312410;
-    padding: 10px;
-    border: 1px solid #AEA18D;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-#recent_blog h3, #recent_dist_blog h3{
-    color: #C1B39F;
-    background: #3D2B12;
-    padding-left: 10px;
-    text-shadow: 0px 1px 1px #000;
-}
-
-#recent_blog a, #recent_dist_blog a{
-    color: #C4A97E;
-}
-
 #templatemo_content h2, #templatemo_content h3 {
     color: #FFF;
     padding: 3px 0px 3px 5px;
@@ -507,4 +488,24 @@ h3 {
     font-size: 15px;
     font-weight: bold;
     margin: 10px 0px 3px 0px;
+}
+
+#recent_blog, #recent_dist_blog {
+    background: #312410;
+    padding: 10px;
+    border: 1px solid #AEA18D;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#recent_blog h3, #recent_dist_blog h3{
+    color: #C1B39F;
+    background: #3D2B12;
+    text-shadow: 0px 1px 1px #000;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+#recent_blog a, #recent_dist_blog a{
+    color: #C4A97E;
 }
