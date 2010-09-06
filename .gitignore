@@ -21,6 +21,7 @@ public/stylesheets/cache
 #production database
 db/production.sqlite3
 *.dat
+.fuse*
 
 # Acts as Indexed
 index/**/*

@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    picasa_albums:
+      title: Picasa Albums
+  admin:
+    picasa_albums:
+      index:
+        create_new: Lag en ny Picasa Album
+        reorder: Endre rekkefølgen på Picasa Albums
+        reorder_done: Ferdig å endre rekkefølgen Picasa Albums
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Picasa Albums enda. Klikk på "Lag en ny Picasa Album" for å legge til din første picasa album.
+      picasa_album:
+        view_live: Vis hvordan denne picasa album ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne picasa album
+        delete: Fjern denne picasa album permanent
+  picasa_albums:
+    show:
+      other: Andre Picasa Albums

@@ -1,0 +1,19 @@
+en:
+  plugins:
+    picasa_albums:
+      title: Picasa Albums
+  admin:
+    picasa_albums:
+      index:
+        create_new: Create a new Picasa Album
+        reorder: Reorder Picasa Albums
+        reorder_done: Done Reordering Picasa Albums
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Picasa Albums yet. Click "Create a new Picasa Album" to add your first picasa album.
+      picasa_album:
+        view_live: View this picasa album live <br/><em>(opens in a new window)</em>
+        edit: Edit this picasa album
+        delete: Remove this picasa album forever
+  picasa_albums:
+    show:
+      other: Other Picasa Albums

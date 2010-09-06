@@ -1,0 +1,36 @@
+<% js_caching = RefinerySetting.find_or_set(:use_resource_caching, Rails.root.join('public', 'javascripts', 'cache').writable?) -%>
+<% content_for :head do %>
+  <%= jquery_include_tags(:caching => js_caching) %>
+
+  <script type="text/javascript" src="/javascripts/yoxview/yoxview-init.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+  <% @picasa_albums.each do |picasa_album| %>
+        $("#picasa_album_<%= picasa_album.id %>").yoxview({dataUrl: '<%= picasa_album.album_url %>'});
+  <% end %>
+    });
+  </script>
+
+  <style type="text/css">
+    #picasa_albums img {
+      margin: 0px 10px 20px 10px;
+      border: 2px solid #2F230F;
+      -moz-box-shadow: 5px 5px 5px #333;
+      -webkit-box-shadow: 5px 5px 5px #333;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+  </style>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <div id="picasa_albums">
+    <% @picasa_albums.each do |picasa_album| %>
+      <div id="picasa_album_<%= picasa_album.id %>">
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

@@ -1,6 +1,6 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
-require 'smtp_tls'
+#require 'smtp_tls'
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
