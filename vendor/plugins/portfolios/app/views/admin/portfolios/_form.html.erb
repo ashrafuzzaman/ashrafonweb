@@ -1,0 +1,35 @@
+<% form_for [:admin, @portfolio] do |f| -%>
+  <%= f.error_messages %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :description -%>
+    <%= f.text_area :description, :rows => 20, :class => 'wymeditor widest' -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :thumb_url -%>
+    <%= f.text_field :thumb_url -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :image_url -%>
+    <%= f.text_field :image_url -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :active -%>
+    <%= f.check_box :active -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('admin.portfolios.portfolio.delete')
+              } %>
+<% end -%>

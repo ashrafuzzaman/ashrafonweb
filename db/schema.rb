@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100906105725) do
+ActiveRecord::Schema.define(:version => 20100906200932) do
 
   create_table "images", :force => true do |t|
     t.integer   "parent_id"
@@ -82,17 +82,30 @@ ActiveRecord::Schema.define(:version => 20100906105725) do
   add_index "pages", ["parent_id"], :name => "index_pages_on_parent_id"
 
   create_table "picasa_albums", :force => true do |t|
+    t.string    "title"
+    t.integer   "image_per_page"
+    t.text      "description"
+    t.string    "album_url"
+    t.boolean   "active"
+    t.integer   "position"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+  end
+
+  add_index "picasa_albums", ["id"], :name => "index_picasa_albums_on_id"
+
+  create_table "portfolios", :force => true do |t|
     t.string   "title"
-    t.integer  "image_per_page"
     t.text     "description"
-    t.string   "album_url"
+    t.string   "thumb_url"
+    t.string   "image_url"
     t.boolean  "active"
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "picasa_albums", ["id"], :name => "index_picasa_albums_on_id"
+  add_index "portfolios", ["id"], :name => "index_portfolios_on_id"
 
   create_table "refinery_settings", :force => true do |t|
     t.string    "name"

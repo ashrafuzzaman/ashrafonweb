@@ -1,0 +1,19 @@
+nb:
+  plugins:
+    portfolios:
+      title: Portfolios
+  admin:
+    portfolios:
+      index:
+        create_new: Lag en ny Portfolio
+        reorder: Endre rekkefølgen på Portfolios
+        reorder_done: Ferdig å endre rekkefølgen Portfolios
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Portfolios enda. Klikk på "Lag en ny Portfolio" for å legge til din første portfolio.
+      portfolio:
+        view_live: Vis hvordan denne portfolio ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne portfolio
+        delete: Fjern denne portfolio permanent
+  portfolios:
+    show:
+      other: Andre Portfolios

@@ -1,0 +1,19 @@
+en:
+  plugins:
+    portfolios:
+      title: Portfolios
+  admin:
+    portfolios:
+      index:
+        create_new: Create a new Portfolio
+        reorder: Reorder Portfolios
+        reorder_done: Done Reordering Portfolios
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Portfolios yet. Click "Create a new Portfolio" to add your first portfolio.
+      portfolio:
+        view_live: View this portfolio live <br/><em>(opens in a new window)</em>
+        edit: Edit this portfolio
+        delete: Remove this portfolio forever
+  portfolios:
+    show:
+      other: Other Portfolios

@@ -1,0 +1,33 @@
+<% js_caching = RefinerySetting.find_or_set(:use_resource_caching, Rails.root.join('public', 'javascripts', 'cache').writable?) -%>
+<% content_for :head do %>
+  <%= jquery_include_tags(:caching => js_caching) %>
+
+  <script type="text/javascript" src="/javascripts/yoxview/yoxview-init.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#portfolios").yoxview();
+  });
+  </script>
+
+  <style type="text/css">
+    #portfolios img {
+      margin: 0px 10px 20px 10px;
+      border: 2px solid #2F230F;
+      -moz-box-shadow: 5px 5px 5px #333;
+      -webkit-box-shadow: 5px 5px 5px #333;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+  </style>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <div id="portfolios">
+    <% @portfolios.each do |portfolio| %>
+      <a href="<%= portfolio.image_url %>"><img src="<%= portfolio.thumb_url %>" title="<%= portfolio.title %>" /></a>
+    <% end %>
+  </div>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
