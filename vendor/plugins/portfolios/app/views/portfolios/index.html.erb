@@ -2,22 +2,63 @@
 <% content_for :head do %>
   <%= jquery_include_tags(:caching => js_caching) %>
 
-  <script type="text/javascript" src="/javascripts/yoxview/yoxview-init.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.bpopup.js"></script>
 
   <script type="text/javascript">
+    function attatch_popup(element_id) {
+      $('#'+ element_id).click(function() {
+        $('#popup_content'+ element_id).openPopup({amsl:50, fadeSpeed:500, opacity:0.8});
+        return false;
+      });
+    }
+
     $(document).ready(function(){
-      $("#portfolios").yoxview();
+  <% @portfolios.each do |portfolio| %>
+        attatch_popup("<%= portfolio.id %>");
+  <% end %>
     });
   </script>
 
   <style type="text/css">
     #portfolios img {
       margin: 0px 10px 20px 10px;
-      border: 2px solid #2F230F;
+      border: 2px solid #A89479;
       -moz-box-shadow: 5px 5px 5px #333;
       -webkit-box-shadow: 5px 5px 5px #333;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
+    }
+
+    .popup {
+      background: #6C5D48;
+      border: 2px solid #A89479;
+      -moz-box-shadow: 0px 0px 10px #777;
+      -webkit-box-shadow: 0px 0px 10px #777;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    }
+    .popup h2{
+      color: #BEB09A;
+      margin: 0px;
+    }
+    .popup .title {
+      padding: 7px;
+      background: #322511;
+    }
+    .popup .content{
+      margin: 10px;
+    }
+    .popup .content img{
+      margin: 0px 10px 10px 0px;
+      border: 2px solid #A89479;
+      -moz-box-shadow: 5px 5px 5px #333;
+      -webkit-box-shadow: 5px 5px 5px #333;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+
+    }
+    .popup p{
+      color: #DFDCD8;
     }
   </style>
 <% end %>
@@ -25,9 +66,19 @@
 <% content_for :body_content_left do %>
   <div id="portfolios">
     <% @portfolios.each do |portfolio| %>
-      <a href="<%= portfolio.image_url %>"><img src="<%= portfolio.thumb_url %>" title="<%= portfolio.title %>" /></a>
+      <img id="<%= portfolio.id %>" src="<%= portfolio.thumb_url %>" title="<%= portfolio.title %>" />
     <% end %>
   </div>
 <% end %>
 
 <%= render :partial => "/shared/content_page" %>
+
+<% @portfolios.each do |portfolio| %>
+  <div class="popup" style="display: none;" id="popup_content<%= portfolio.id %>">
+    <div class="title"><h2><%= portfolio.title %><a style="float: right;" class="bClose">X</a></h2></div>
+    <div class="content" style="clear: both;">
+      <img style="float: left;" width="300" src="<%= portfolio.image_url %>" alt="<%= portfolio.title %>" />
+      <div><%= portfolio.description %></div>
+    </div>
+  </div>
+<% end %>
