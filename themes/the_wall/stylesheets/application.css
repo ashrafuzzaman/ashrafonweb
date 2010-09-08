@@ -509,3 +509,9 @@ h3 {
 #recent_blog a, #recent_dist_blog a{
     color: #C4A97E;
 }
+
+.close_icon {
+    width: 32px;
+    height: 32px;
+    background: url(/theme/images/Close-box-red.png) no-repeat;
+}
