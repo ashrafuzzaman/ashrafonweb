@@ -511,7 +511,7 @@ h3 {
 }
 
 .close_icon {
-    width: 32px;
-    height: 32px;
-    background: url(/theme/images/Close-box-red.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    background: url(/theme/images/close_yellow_icon.png) no-repeat;
 }
