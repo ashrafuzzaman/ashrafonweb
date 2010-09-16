@@ -9,3 +9,12 @@ require File.expand_path('../application', __FILE__)
 #  :password => "imbackimback",
 #  :authentication => :plain,
 #}
+
+ActionMailer::Base.smtp_settings = {
+  :address => "smtp.gmail.com",
+  :port => 587,
+  :domain => "www.gmail.com",
+  :authentication => :plain,
+  :user_name => "noreply.ashraf@gmail.com",
+  :password => "imbackimback",
+}
