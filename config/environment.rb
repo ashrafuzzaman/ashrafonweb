@@ -1,20 +1,11 @@
 # Load the rails application
 require File.expand_path('../application', __FILE__)
-#require 'smtp_tls'
-
-#ActionMailer::Base.smtp_settings = {
-#  :address => "smtp.gmail.com",
-#  :port=>587,
-#  :user_name => "noreply.ashraf@gmail.com",
-#  :password => "imbackimback",
-#  :authentication => :plain,
-#}
 
 ActionMailer::Base.smtp_settings = {
-  :address => "smtp.gmail.com",
-  :port => 587,
-  :domain => "www.gmail.com",
+  :address        => "smtp.sendgrid.net",
+  :port           => "25",
   :authentication => :plain,
-  :user_name => "noreply.ashraf@gmail.com",
-  :password => "imbackimback",
+  :user_name      => ENV['SENDGRID_USERNAME'],
+  :password       => ENV['SENDGRID_PASSWORD'],
+  :domain         => ENV['SENDGRID_DOMAIN'],
 }
