@@ -25,3 +25,11 @@ config.log_level = :info
 # instead of the default file system for resources and images
 # Make sure to your bucket info is correct in amazon_s3.yml
 Refinery.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
+
+ActionMailer::Base.server_settings = {
+  :address => "smtp.gmail.com",
+  :port=>587,
+  :user_name => "noreply.ashraf@gmail.com",
+  :password => "imbackimback",
+  :authentication => :login
+}
