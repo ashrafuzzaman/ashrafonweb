@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Home sweet home - Ashraf on web</title>
+        <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="ashraf, ashrafuzzaman, home, home page" />
+        <meta name="description" content="This is the home page for www.ashrafuzzaman.com" />
+        <%= javascript_include_tag 'jquery.js' %>
+        <script type="text/javascript" src="javascripts/default.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                loadRecentBlogFeed();
+            });
+
+        </script>
+        <%= yield :head %>
+    </head>
+    <body>
+        <div id="templatemo_site_title_bar_wrapper">
+            <div id="templatemo_site_title_bar">
+                <div id="site_title">
+                    <h1>A.K.M. Ashrafuzzaman</h1>
+                    <span>ashrafuzzaman.g2(AT)gmail(DOT)com</span>
+                    <span>zmn.ashraf(AT)gmail(DOT)com</span>
+                    <span>+46720413223</span>
+                    <span><a title="Technical blog" target="_blank" href="http://jitu-blog.blogspot.com">jitu-blog.blogspot.com</a>, <a href="http://distash.blogspot.com/">distash.blogspot.com</a></span>
+                </div>
+                <div id="twitter">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <!-- end of templatemo_site_title_bar -->
+        </div>
+        <!-- end of templatemo_site_title_bar_wrapper -->
+        <div id="templatemo_content_wrapper">
+            <div id="templatemo_content">
+                <!-- start of slider -->
+                <div class="slider-wrap">
+                    <div class="stripNavL" id="stripNavL0">
+                        <a href="#">Left</a>
+                    </div>
+                    <div class="stripNav" style="width: 610px; ">
+                        <%= render :partial => "/shared/menu" %>
+                    </div>
+                    <div id="slider1" class="stripViewer">
+                        <div class="panelContainer" style="width: 4000px; ">
+                            <div class="panel" title="Home" style="">
+                                <div class="wrapper">
+                                    <%= yield %>
+                                </div>
+                            </div>
+                        </div><!-- .panelContainer -->
+                    </div>
+                    <div class="stripNavR" id="stripNavR0">
+                        <a href="#">Right</a>
+                    </div><!-- #slider1 -->
+                </div><!-- .slider-wrap -->
+                <p id="cross-links" style="width:0px; height: 0px; font-size:0; overflow: hidden;">
+                    Same-page cross-link controls:
+                    <br>
+                    <a href="#1" class="cross-link">Page 1</a> | <a href="#2" class="cross-link">Page 2</a> | <a href="#3" class="cross-link">Page 3</a> | <a href="#4" class="cross-link">Page 4</a> | <a href="#5" class="cross-link">Page 5</a>
+                </p>
+                <!-- end of slider -->
+            </div>
+            <!-- end of templatemo_content -->
+        </div>
+        <!-- end of templatemo_content_wrapper -->
+        <div id="templatemo_footer_wrapper">
+            <div id="templatemo_footer">
+                Developed by A.K.M. Ashrafuzzaman with <a href="http://refinerycms.com/">refinery cms</a>
+            </div>
+            <!-- end of templatemo_footer -->
+        </div>
+        <!-- end of templatemo_footer_wrapper -->
+    </body>
+</html>
