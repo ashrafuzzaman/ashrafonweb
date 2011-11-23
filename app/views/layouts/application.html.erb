@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Home sweet home - Ashraf on web</title>
+        <title><%= RefinerySetting.find_or_set(:site_name, "Ashraf on web") %></title>
         <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,9 +22,7 @@
             <div id="templatemo_site_title_bar">
                 <div id="site_title">
                     <h1>A.K.M. Ashrafuzzaman</h1>
-                    <span>ashrafuzzaman.g2(AT)gmail(DOT)com</span>
-                    <span>zmn.ashraf(AT)gmail(DOT)com</span>
-                    <span>+46720413223</span>
+                    <span><%= RefinerySetting.find_or_set(:email, "ashrafuzzaman.g2(AT)gmail(DOT)com") %></span>
                     <span><a title="Technical blog" target="_blank" href="http://jitu-blog.blogspot.com">jitu-blog.blogspot.com</a>, <a href="http://distash.blogspot.com/">distash.blogspot.com</a></span>
                 </div>
                 <div id="twitter">

@@ -70,4 +70,5 @@ end
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'acts-as-taggable-on', '~>2.1.0'
 gem 'refinerycms-project_portfolios', '~>0.0.2'
+gem 'refinerycms-inquiries', '~> 1.0.0'
 # END USER DEFINED
