@@ -5,7 +5,6 @@
     $(document).ready(function() {
         loadRecentBlogFeed();
     });
-
 </script>
 <% end %>
 <div>
@@ -24,22 +23,11 @@
         </div>
     </div>
     <div style="margin: 10px 0px 0px 250px; clear: both;">
-        <div class="icon" style="float: left;">
-            <a href="http://jitu-blog.blogspot.com/" target="_blank" speech="Follow my technical blog"> <div class="blogger_icon"></div> </a>
-        </div>
-        <div class="icon" style="float: left;">
-            <a href="http://jitu-blog.blogspot.com/feeds/posts/default" target="_blank" speech="Subscribe my technical blog"> <div class="feed"></div> </a>
-        </div>
-        <div class="icon" style="float: left;">
-            <a href="http://twitter.com/ashrafuzzaman" target="_blank" speech="Follow me on Twitter"> <div class="twitter"></div> </b></a>
-        </div>
-        <div class="icon" style="float: left;">
-            <a href="http://www.linkedin.com/pub/a-k-m-ahsrafuzzaman/8/716/8b9" target="_blank"
-            speech="I am Linked in"> <div class="linkedin_icon"></div> </a>
-        </div>
-        <div class="icon" style="float: left;">
-            <a href="http://www.facebook.com/profile.php?id=806820141" target="_blank" speech="Watch me in Facebook"> <div class="facebook_icon"></div> </a>
-        </div>
+        <%= render_icon("http://jitu-blog.blogspot.com/", "blogger_icon") %>
+        <%= render_icon("http://jitu-blog.blogspot.com/feeds/posts/default", "feed") %>
+        <%= render_icon("http://twitter.com/ashrafuzzaman", "twitter") %>
+        <%= render_icon("http://www.linkedin.com/pub/a-k-m-ahsrafuzzaman/8/716/8b9", "linkedin_icon") %>
+        <%= render_icon("http://www.facebook.com/profile.php?id=806820141", "facebook_icon") %>
     </div>
     <br/>
 </div>

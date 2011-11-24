@@ -1,6 +1,10 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    POpen4 (0.1.4)
+      Platform (>= 0.4.0)
+      open4
+    Platform (0.4.0)
     abstract (1.0.0)
     actionmailer (3.0.11)
       actionpack (= 3.0.11)
@@ -52,6 +56,8 @@ GEM
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
     i18n (0.5.0)
+    jammit (0.6.3)
+      yui-compressor (>= 0.9.3)
     json (1.6.1)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -59,6 +65,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.17.2)
+    open4 (1.2.0)
     orm_adapter (0.0.5)
     polyglot (0.3.3)
     rack (1.2.4)
@@ -132,7 +139,7 @@ GEM
       globalize3 (~> 0.1)
       refinerycms-core (= 1.0.9)
       seo_meta (~> 1.1)
-    refinerycms-project_portfolios (0.0.2)
+    refinerycms-project_portfolios (0.0.3)
       acts-as-taggable-on (~> 2.1.0)
       refinerycms (~> 1.0.9)
     refinerycms-resources (1.0.9)
@@ -157,14 +164,17 @@ GEM
     warden (1.0.6)
       rack (>= 1.0)
     will_paginate (3.0.2)
+    yui-compressor (0.9.6)
+      POpen4 (>= 0.1.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   acts-as-taggable-on (~> 2.1.0)
+  jammit
   refinerycms (~> 1.0.9)
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0.0)
-  refinerycms-project_portfolios (~> 0.0.2)
+  refinerycms-project_portfolios (~> 0.0.3)
   sqlite3

@@ -1,0 +1,11 @@
+embed_assets: on
+package_assets: always
+
+javascripts:
+  common:
+    - public/javascripts/default.js
+
+stylesheets:
+  common:
+    - public/stylesheets/application.css
+    - public/stylesheets/portfolio.css

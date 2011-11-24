@@ -2,20 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title><%= RefinerySetting.find_or_set(:site_name, "Ashraf on web") %></title>
-        <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="keywords" content="ashraf, ashrafuzzaman, home, home page" />
-        <meta name="description" content="This is the home page for www.ashrafuzzaman.com" />
-        <%= javascript_include_tag 'jquery.js' %>
-        <script type="text/javascript" src="javascripts/default.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                loadRecentBlogFeed();
-            });
-
-        </script>
-        <%= yield :head %>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <%= stylesheet_link_tag :all, :cache => true %>
+        <%= csrf_meta_tag %>
     </head>
     <body>
         <div id="templatemo_site_title_bar_wrapper">
@@ -23,7 +12,8 @@
                 <div id="site_title">
                     <h1>A.K.M. Ashrafuzzaman</h1>
                     <span><%= RefinerySetting.find_or_set(:email, "ashrafuzzaman.g2(AT)gmail(DOT)com") %></span>
-                    <span><a title="Technical blog" target="_blank" href="http://jitu-blog.blogspot.com">jitu-blog.blogspot.com</a>, <a href="http://distash.blogspot.com/">distash.blogspot.com</a></span>
+                    <span><a href="http://jitu-blog.blogspot.com" target="_blank">jitu-blog.blogspot.com</a></span>
+                    <span><a href="http://distash.blogspot.com/" target="_blank">distash.blogspot.com</a></span>
                 </div>
                 <div id="twitter">
                     <a href="#"></a>
@@ -72,5 +62,19 @@
             <!-- end of templatemo_footer -->
         </div>
         <!-- end of templatemo_footer_wrapper -->
+
+        <!-- Added javascripts -->
+        <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+        <script type='text/javascript'>
+          google.load('jquery', '1.7');
+        </script>
+        <%= javascript_include_tag 'default' %>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                loadRecentBlogFeed();
+            });
+
+        </script>
+        <%= yield :javascripts %>
     </body>
 </html>
