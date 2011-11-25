@@ -3,7 +3,7 @@
     <head>
         <title><%= RefinerySetting.find_or_set(:site_name, "Ashraf on web") %></title>
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-        <%= stylesheet_link_tag :all, :cache => true %>
+        <%= include_stylesheets :common, :media => 'all' %>
         <%= csrf_meta_tag %>
     </head>
     <body>

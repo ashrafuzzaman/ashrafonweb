@@ -1,5 +1,6 @@
 embed_assets: on
 package_assets: always
+package_path: public
 
 javascripts:
   common:
