@@ -3,7 +3,5 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-require 'jammit'
 
-Jammit.package!
 Ashrafonweb::Application.load_tasks
