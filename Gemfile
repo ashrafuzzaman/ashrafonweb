@@ -72,4 +72,6 @@ gem 'acts-as-taggable-on', '~>2.1.0'
 gem 'refinerycms-project_portfolios', '~>0.0.3'
 gem 'refinerycms-inquiries', '~> 1.0.0'
 gem 'jammit'
+gem 'fog'
+
 # END USER DEFINED
