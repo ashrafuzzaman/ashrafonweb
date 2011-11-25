@@ -280,7 +280,7 @@ h3 {
 
 .stripViewer .panelContainer .panel ul {
     text-align: left;
-    margin: 0 15px 0 30px;
+    margin: 0;
     padding: 0;
 }
 .slider-wrap { /* This div isn't entirely necessary but good for getting the side arrows vertically centered */
@@ -324,7 +324,7 @@ h3 {
     width: 800px; /* Also specified in  .stripViewer  above */
 }
 .stripViewer .panelContainer .panel .wrapper { /* Wrapper to give some padding in the panels, without messing with existing panel width */
-    margin: 10px 40px 20px 40px;
+    margin: 0 30px 10px 30px;
     height: 425px;
 }
 .wrapper {

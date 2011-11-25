@@ -69,7 +69,7 @@ end
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'acts-as-taggable-on', '~>2.1.0'
-gem 'refinerycms-project_portfolios', '~>0.0.3'
+gem 'refinerycms-project_portfolios', '~>0.0.4'
 gem 'refinerycms-inquiries', '~> 1.0.0'
 gem 'jammit'
 gem 'fog'
