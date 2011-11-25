@@ -59,6 +59,7 @@
 .image-grid li img{
     width: 100%;
     max-height: 60px;
+    background-color: #BEB09A;
 }
 .image-grid li {
     width: 136px;
@@ -115,6 +116,7 @@
 }
 .popup .popup-content img{
   margin: 0px 10px 10px 0px;
+  background-color: #BEB09A;
   border: 2px solid #A89479;
   -moz-box-shadow: 5px 5px 5px #333;
   -webkit-box-shadow: 5px 5px 5px #333;
