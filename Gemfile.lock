@@ -156,7 +156,7 @@ GEM
       globalize3 (~> 0.1)
       refinerycms-core (= 1.0.9)
       seo_meta (~> 1.1)
-    refinerycms-project_portfolios (0.0.4)
+    refinerycms-project_portfolios (0.0.5)
       acts-as-taggable-on (~> 2.1.0)
       refinerycms (~> 1.0.9)
     refinerycms-resources (1.0.9)
@@ -195,5 +195,5 @@ DEPENDENCIES
   refinerycms (~> 1.0.9)
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0.0)
-  refinerycms-project_portfolios (~> 0.0.4)
+  refinerycms-project_portfolios (~> 0.0.5)
   sqlite3
