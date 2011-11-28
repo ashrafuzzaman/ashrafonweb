@@ -110,6 +110,8 @@
   margin: 10px;
 }
 .popup .popup-content img{
+  width: 300px;
+  height: 100%;
   margin: 0px 10px 10px 0px;
   border: 2px solid #A89479;
   -moz-box-shadow: 5px 5px 5px #333;
