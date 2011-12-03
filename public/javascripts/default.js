@@ -1,25 +1,17 @@
+var NUMBER_OF_FEED_TO_SHOW = 3;
+
 function initialize() {
-    if ( $.browser.msie ) {
-        // extra tag is added in the body to warn if it is IE :P
-        // so that we can custom our css accordingly
-        $("body").addClass("ie");
-        if ( $.browser.version == "6.0" ) {
-            $("body").addClass("ie6");
-        }
-    }
     loadRecentBlogFeed();
 }
 
 function loadRecentBlogFeed() {
     if(!$("#recent_blog")) return;
-    var numberOfFeed = 3;
-    var technicalBlogFeed = "http://jitu-blog.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&max-results=" + numberOfFeed + "&callback=?";
-    var distBlogFeed = "http://distash.blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&max-results=" + numberOfFeed + "&callback=?";
-    loadBlogFeed("Recent Blogs", numberOfFeed, technicalBlogFeed, $("#recent_blog"));
-    loadBlogFeed("Bogging on Distribited", numberOfFeed, distBlogFeed, $("#recent_dist_blog"));
+    loadBlogFeed("Recent Blogs", "jitu-blog", $("#recent_blog"));
+    loadBlogFeed("Bogging on Distribited", "distash", $("#recent_dist_blog"));
 }
 
-function loadBlogFeed(title, numberOfFeed, jsonFeed, loadInContent) {
+function loadBlogFeed(title, blogSpotName, loadInContent) {
+    var jsonFeed = "http://" + blogSpotName + ".blogspot.com/feeds/posts/default?orderby=published&alt=json-in-script&max-results=" + NUMBER_OF_FEED_TO_SHOW + "&callback=?";
     $.getJSON(jsonFeed,
         function(data) {
             var recent_blog_contents = '';
@@ -39,7 +31,7 @@ function loadBlogFeed(title, numberOfFeed, jsonFeed, loadInContent) {
                 }
                 postTags = postTags.length > 0 ? postTags.join(", ") : "nothing specific";
                 var seperator = '';
-                if(numberOfFeed != i+1) seperator = "<hr size='1'/>";
+                if(NUMBER_OF_FEED_TO_SHOW != i+1) seperator = "<hr size='1'/>";
                 recent_blog_contents += "<a href=\"" + postLink +"\" target=\"_blank\" speech=\"It is about " + postTags + "\">" + postTitle + "</a>" + seperator;
             });
             loadInContent.html("<h3>" + title + "</h3>" + recent_blog_contents);
